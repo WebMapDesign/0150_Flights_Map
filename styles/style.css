@@ -1,0 +1,71 @@
+#map {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 750px;
+  height: 750px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+
+.leaflet-control-zoom-fullscreen {
+  background-image: url(../images/icon-fullscreen.png);
+}
+
+.leaflet-retina.leaflet-control-zoom-fullscreen {
+  background-image: url(../images/icon-fullscreen-2x.png);
+  background-size: 26px 26px;
+}
+
+.leaflet-container {
+  background-color: #e6e6e6;
+}
+
+.popup-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.popup-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.popup-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 0.8;
+}
+
+.tooltip-city-name {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.star {
+  font-size: 1em;
+}
+
+#map-title {
+  position: absolute;
+  z-index: 3000;
+  left: 25px;
+  bottom: 25px;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid black; 
+}
+
+#text-title {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
