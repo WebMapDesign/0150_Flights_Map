@@ -1,12 +1,16 @@
 #map {
   font-family: Helvetica, Arial, sans-serif;
-  width: 750px;
-  height: 750px;
+  width: 1000px;
+  height: 900px;
   border: 2px solid black;
   margin: 10px;
 }
 
+.leaflet-container {
+  background-color: #e6e6e6;
+}
 
+/* -------------MAP BUTTONS AND CONTROLS-------------- */
 .leaflet-control-zoom-fullscreen {
   background-image: url(../images/icon-fullscreen.png);
 }
@@ -16,10 +20,84 @@
   background-size: 26px 26px;
 }
 
-.leaflet-container {
-  background-color: #e6e6e6;
+.star {
+  font-size: 15px;
 }
 
+/* -------------MAP TITLE-------------- */
+#map-title {
+  position: absolute;
+  z-index: 3000;
+  left: 25px;
+  bottom: 25px;
+  width: auto;
+  height: auto;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid black;
+}
+
+#text-title {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------SIDEBAR-------------- */
+
+#sidebar-results {
+  padding-bottom: 20px;
+}
+
+.leaflet-sidebar {
+  width: 350px;
+  height: auto;
+  color: #2c2c2c;
+  padding: 20px;
+}
+
+#sidebar-title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+#sidebar-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c2c2c;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.sidebar-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sidebar-values {
+  font-weight: 600;
+}
+
+.centered {
+  text-align: center;
+}
+
+.grouped-results {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+/* -------------POPUPS-------------- */
 .popup-title {
   font-size: 14px;
   font-weight: 600;
@@ -30,7 +108,6 @@
 .popup-subtitle {
   font-size: 12px;
   font-weight: 500;
-  text-transform: uppercase;
   line-height: 0.8;
 }
 
@@ -40,32 +117,24 @@
   line-height: 0.8;
 }
 
-.tooltip-city-name {
-  font-size: 12px;
-  font-weight: 400;
+
+/* departure destination buttons */
+.btn-select-airport {
+  width: 86%;
+  border: none;
+  color: #000000 !important;
+  padding: 10px 7%;
   text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
 }
 
-.star {
-  font-size: 1em;
+.btn-departure {
+  background-color: #b0f875;
 }
 
-#map-title {
-  position: absolute;
-  z-index: 3000;
-  left: 25px;
-  bottom: 25px;
-  width: auto;
-  height: auto;
-  padding: 15px;
-  background-color: #ffffff;
-  border: 1px solid black; 
-}
-
-#text-title {
-  font-size: 25px;
-  line-height: 25px;
-  font-weight: 800;
-  margin: 0;
-  padding: 0;
+.btn-destination {
+  background-color: #f8d575;
 }
