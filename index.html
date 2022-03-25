@@ -23,6 +23,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css"
     />
+    <link rel="stylesheet" href="styles/L.Control.Sidebar.css" />
     <script
       src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
       integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
@@ -30,6 +31,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
     <script src="https://unpkg.com/leaflet.fullscreen@1.5.0/Control.FullScreen.js"></script>
+    <script src="scripts/L.Control.Sidebar.js"></script>
     <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -40,6 +42,56 @@
         <p id="text-title">Flights Map Demo</p>
       </div>
     </div>
+
+    <div id="sidebar-results">
+      <p id="sidebar-title">Your Next Travel Programme</p>
+
+      <div class="grouped-results">
+        <p class="sidebar-subtitle centered">
+          <span id="airport-dep" class="sidebar-values"></span>
+          <span id="airport-dep-code" class="sidebar-values"></span>
+        </p>
+        <p class="sidebar-subtitle centered"> to </p>
+        <p class="sidebar-subtitle centered">
+          <span id="airport-dest" class="sidebar-values"></span>
+          <span id="airport-dest-code" class="sidebar-values"></span>
+        </p>
+      </div>
+
+      <div class="grouped-results">
+        <p class="sidebar-text">
+          Plane Model:
+          <span id="airplane-model" class="sidebar-values"></span>
+        </p>
+        <p class="sidebar-text">
+          Pilot Name:
+          <span id="pilot-name" class="sidebar-values"></span>
+        </p>
+        <p class="sidebar-text">
+          Distance:
+          <span id="route-distance" class="sidebar-values"></span>
+        </p>
+        <p class="sidebar-text">
+          Duration: <span id="route-duration" class="sidebar-values"></span>
+        </p>
+      </div>
+
+      <div class="grouped-results">
+        <p class="sidebar-text">
+          Plane Rate:
+          <span id="airplane-rate"> </span>
+        </p>
+        <p class="sidebar-text">
+          Pilot Rate:
+          <span id="pilot-rate"></span>
+        </p>
+        <p class="sidebar-text">
+          Total Rate:
+          <span id="total-rate"></span>
+        </p>
+      </div>
+    </div>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>
